@@ -12,7 +12,7 @@
   },
   "include": [
     "./src"
-  ],
+, "generate.ts"  ],
   "exclude": [
     "node_modules"
   ]
