@@ -122,7 +122,7 @@
           }
         }
       },
-      "patch": {
+      "put": {
         "operationId": "updateBook",
         "description": "Updates the book associated with the given bookId",
         "requestBody": {

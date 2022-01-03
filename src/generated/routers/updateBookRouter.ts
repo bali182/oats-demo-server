@@ -8,7 +8,7 @@ import { UpdateBookServerRequest } from '../requests/UpdateBookServerRequest'
 import { Book } from '../types/Book'
 import { updateBookRequestBodyValidator } from '../validators/updateBookRequestBodyValidator'
 
-export const updateBookRouter: Router = Router().patch(
+export const updateBookRouter: Router = Router().put(
   '/books/:bookId',
   async (request: Request, response: Response, next: NextFunction): Promise<void> => {
     const frameworkInput: ExpressParameters = { request, response, next }

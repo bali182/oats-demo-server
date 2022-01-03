@@ -18,7 +18,7 @@ export async function updateBook(
   const requestBody = await configuration.getRequestBody(input)
   const rawRequest: RawHttpRequest = {
     url: requestUrl,
-    method: 'patch',
+    method: 'put',
     body: requestBody,
     headers: requestHeaders,
   }

@@ -10,7 +10,13 @@ app.use(express.json());
 const port = 5000;
 
 app.use((_, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+  res.setHeader("Access-Control-Allow-Headers", "*");
+  res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET,POST,HEAD,OPTIONS,PUT,PATCH,DELETE"
+  );
   next();
 });
 
