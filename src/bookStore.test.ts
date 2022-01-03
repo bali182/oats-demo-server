@@ -26,7 +26,7 @@ describe("Http methods", () => {
     ],
   });
   const sdk = new BookStoreClientSdk(
-    new NodeFetchClientConfiguration("http://localhost:3333")
+    new NodeFetchClientConfiguration("http://localhost:3000")
   );
 
   describe("happy path", () => {

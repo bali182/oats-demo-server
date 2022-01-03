@@ -7,7 +7,12 @@ const app = express();
 app.set("json spaces", 2);
 app.use(express.json());
 
-const port = 3000;
+const port = 5000;
+
+app.use((_, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  next();
+});
 
 app.use(
   createBookStoreRouter(

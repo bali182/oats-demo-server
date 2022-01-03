@@ -11,8 +11,9 @@
     ]
   },
   "include": [
-    "./src"
-, "generate.ts"  ],
+    "./src",
+    "generate.ts"
+  ],
   "exclude": [
     "node_modules"
   ]
