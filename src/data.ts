@@ -1,41 +1,34 @@
-import { AppError } from "./generated/types/AppError";
-import { Book } from "./generated/types/Book";
-
-export const wildGuideBears: Book = {
+export const wildGuideBears = {
   id: 1,
-  title: "Wild Guide: Bears",
-  author: "Charles Fergus",
-  bookType: "paperback",
+  title: 'Wild Guide: Bears',
+  author: 'Charles Fergus',
+  bookType: 'paperback',
   price: 10,
-  description: "This is a book about bears",
-};
+  description: 'This is a book about bears',
+} as const
 
-export const grizzlyHeart: Book = {
+export const grizzlyHeart = {
   id: 2,
-  title: "Grizzly Heart",
-  author: "Charles Russell & Maureen Enns",
-  bookType: "digital",
+  title: 'Grizzly Heart',
+  author: 'Charles Russell & Maureen Enns',
+  bookType: 'digital',
   price: 5,
-  description: "This is another book about bears",
-};
+  description: 'This is another book about bears',
+} as const
 
-export const bearViewingInAlaska: Book = {
+export const bearViewingInAlaska = {
   id: 3,
-  title: "Bear-viewing in Alaska",
-  author: "Stephen Stringham",
-  bookType: "audio",
+  title: 'Bear-viewing in Alaska',
+  author: 'Stephen Stringham',
+  bookType: 'audio',
   price: 15,
-  description: "This is an audio book about bears",
-};
+  description: 'This is an audio book about bears',
+} as const
 
-export const books: Book[] = [
-  wildGuideBears,
-  grizzlyHeart,
-  bearViewingInAlaska,
-];
+export const books = [wildGuideBears, grizzlyHeart, bearViewingInAlaska]
 
-export function error(message: string): AppError {
+export function error(message: string) {
   return {
     message,
-  };
+  }
 }
